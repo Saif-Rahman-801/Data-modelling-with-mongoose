@@ -11,15 +11,9 @@ const subTodoSchema = new mongoose.Schema(
       default: false,
     },
     createdBy: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "User",
-    },
-    subTodos: [
-      {
         type: mongoose.Schema.Types.ObjectId,
-        ref: "Todo",
-      },
-    ],
+        ref: "User"
+    }
   },
   { timestamps: true }
 );
